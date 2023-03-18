@@ -13,10 +13,10 @@
 Follow these instructions to install the OSS-CAD-Suite, which contains
 all the tools: https://github.com/YosysHQ/oss-cad-suite-build#installation
 
-2. Clone the repository into any location of your choosing on your PC
+2. Fork and clone the repository into any location of your choosing on your PC
 Instructions on cloning repositories: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
-3. To build the program onto your FPGA, enter into the finsl_proj/top/top directory on your CMD and enter the command 
+3. To build the program onto your FPGA, enter into the cse-225-final_proj/final_proj/top/top directory on your CMD and enter the command 
 "make prog" into your terminal. After the progam finishes loading, the soundboard functionality will be implemented
 on your FPGA
 
@@ -66,7 +66,7 @@ abc123
 ...
 
 Files should be named test_<key_you_want_to_assign_file_to>.hex. Then move it to final_prog/load, where it will overwrite the
-existing sound file.
+existing sound file. (Only for keys A, B, 3, and 6)
 
 Next, go into load.sv and alter the file count values stored in depth_A, depth_B, depth_3, or depth_6 (whichever key you're
 loading into) to match the length of your new file. DO NOT INCLUDE THE LAST EMPTY LINE IN YOUR FILE LINE COUNT.
