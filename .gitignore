@@ -1,0 +1,6 @@
+*~
+*.vcd
+iverilog-tb
+obj_dir
+.DS_Store
+*.soln.sv
