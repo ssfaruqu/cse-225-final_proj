@@ -15,7 +15,7 @@ module testbench();
    assign error_o = (sound_o != correct_sound_o); 
 
    int i;
-   logic [1:0] test_vector [10:0];
+   logic [1:0] test_vector [11:0];
    logic [1:0] val_r;
    initial begin
     test_vector[0] = 2'b01;
@@ -29,6 +29,7 @@ module testbench();
     test_vector[8] = 2'b01;
     test_vector[9] = 2'b01;
     test_vector[10] = 2'b10;
+    test_vector[10] = 2'b00;
    end
 
    nonsynth_clock_gen
@@ -76,7 +77,7 @@ module testbench();
 
       @(negedge reset_i);
 
-      for(i= 0; i < 11; i++) begin
+      for(i= 0; i < 12; i++) begin
          val_r = test_vector[i];
          up_i = val_r[0];
          down_i = val_r[1];
