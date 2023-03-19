@@ -88,7 +88,7 @@ module testbench();
                 end
             end
             2'b01: begin
-                if(counter_r > 0) begin
+                if(counter_r > 1) begin
                     counter_r = counter_r - 1;
                 end
             end
