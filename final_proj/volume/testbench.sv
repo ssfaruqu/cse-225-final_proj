@@ -12,7 +12,7 @@ module testbench();
    wire [0:0] error_o;
    wire [23:0] correct_sound_o;
    assign correct_sound_o = sound_i >> counter_r;
-   assign error_o = 0;//(sound_o != correct_sound_o); 
+   assign error_o = (sound_o != correct_sound_o); 
 
    int i;
    logic [1:0] test_vector [10:0];
