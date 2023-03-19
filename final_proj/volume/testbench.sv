@@ -89,7 +89,7 @@ module testbench();
             $finish();
          end
 
-         sound_i = sound_i + 1;
+         sound_i = (sound_i + 1) * 2;
       end
 
       $finish();
