@@ -66,7 +66,7 @@ abc123
 ...
 
 Files should be named test_<key_you_want_to_assign_file_to>.hex. Then move it to final_prog/load, where it will overwrite the
-existing sound file. (Only for keys A, B, 3, and 6)
+existing sound file. (You can only load files for keys A, B, 3, and 6)
 
 Next, go into load.sv and alter the file count values stored in depth_A, depth_B, depth_3, or depth_6 (whichever key you're
 loading into) to match the length of your new file. DO NOT INCLUDE THE LAST EMPTY LINE IN YOUR FILE LINE COUNT.
