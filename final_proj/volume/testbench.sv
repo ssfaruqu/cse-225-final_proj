@@ -29,7 +29,7 @@ module testbench();
     test_vector[8] = 2'b01;
     test_vector[9] = 2'b01;
     test_vector[10] = 2'b10;
-    test_vector[10] = 2'b00;
+    test_vector[11] = 2'b00;
    end
 
    nonsynth_clock_gen
