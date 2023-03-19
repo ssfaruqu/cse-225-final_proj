@@ -95,7 +95,6 @@ module testbench();
             default: counter_r = counter_r;
          endcase
 
-         sound_i = sound_i + 1;
          #10;
 
          $display("[%d] sound_i= %h, sound_o= %h, up_i= %b, down_i= %b, counter_r= %d", i, sound_i, sound_o, up_i, down_i, counter_r);
@@ -103,6 +102,8 @@ module testbench();
             $display("Got %h, but should have been %h", sound_o, correct_sound_o);
             $finish();
          end
+
+         sound_i = sound_i + 1;
       end
 
       $finish();
