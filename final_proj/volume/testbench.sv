@@ -81,20 +81,6 @@ module testbench();
          up_i = val_r[0];
          down_i = val_r[1];
 
-         case({up_i, down_i})
-            2'b10: begin
-                if(counter_r < 7) begin
-                    counter_r = counter_r + 1;
-                end
-            end
-            2'b01: begin
-                if(counter_r > 1) begin
-                    counter_r = counter_r - 1;
-                end
-            end
-            default: counter_r = counter_r;
-         endcase
-
          #10;
 
          $display("[%d] sound_i= %h, sound_o= %h, up_i= %b, down_i= %b, counter_r= %d", i, sound_i, sound_o, up_i, down_i, counter_r);
@@ -107,6 +93,22 @@ module testbench();
       end
 
       $finish();
+     end
+
+     always_ff @(posedge clk_i) begin
+      case({up_i, down_i})
+            2'b10: begin
+                if(counter_r < 7) begin
+                    counter_r = counter_r + 1;
+                end
+            end
+            2'b01: begin
+                if(counter_r > 1) begin
+                    counter_r = counter_r - 1;
+                end
+            end
+            default: counter_r = counter_r;
+         endcase
      end
 
      final begin
