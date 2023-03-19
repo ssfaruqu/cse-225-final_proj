@@ -7,7 +7,7 @@ module testbench();
    logic [0:0] up_i = 0;
    logic [0:0] down_i = 0;
    wire [23:0] sound_o;
-   logic [7:0] counter_r = 7'b00000011;
+   logic [2:0] counter_r = 3'b011;
 
    wire [0:0] error_o;
    wire [23:0] correct_sound_o;
