@@ -40,16 +40,16 @@ instatiate and run the file_write module to generate random sound files (you sti
 
 There are 3 sections to this soundboard:
 
-1. Sound Keys
+1. Sound Keys:
 To play sounds, press either the A, B, 3, or 6 key. Only sound will play at a time (if you press another key while a 
 sound is playing, the old sound will stop and the new one will play), and will play continuouslly. To stop a sound, press
 it's desginated key again.
 
-2. Mute
+2. Mute:
 To mute all sounds from playing, press C. To unmute, press C again.
 
-3. Volume
-To raise volume, press D (can raise it multiple times). To lowwer volume, press E (can lower it multiple times). There is
+3. Volume:
+To raise volume, press D (can raise it multiple times). To lower volume, press E (can lower it multiple times). There is
 a set cap to how volume can be raised or lowered
 
 Loading in sound files:
