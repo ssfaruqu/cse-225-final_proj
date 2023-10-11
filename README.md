@@ -25,12 +25,12 @@ in headphones/speakers into the green LINE OUT port of the sound module, as soun
 
 ## Testing
 
-To perform any tests, enter any directory that contains a testbench.sv file and ehter the command "make test".
+To perform any tests, enter any directory that contains a testbench.sv file and enter the command "make test".
 This will run the testbench on its respective module, generating a verlator.log and iverilator.log file. These
 files contain the results of the test in both the Verilator and Icarus Verilog environments. It will also generate
 verilator.fst and iverilog.vcd, the waveform files of the test in each respective environment.
 
-Additionally, Makefiles have been provided to directories that don't have testbecnhes to allow cloners to write
+Additionally, Makefiles have been provided to directories that don't have testbenches to allow cloners to write
 their own testbenches if they so desire.
 
 NOTE: The only exception to this is the testbench.sv file in final_proj/load/file_write, it's sole purpose is to
